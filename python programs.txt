@@ -1,0 +1,46 @@
+n=int(input('Enter any number: '))
+
+if n%2==0:
+    print('Even number')
+else:
+    print('odd number ')
+    
+    
+===========================
+
+n=int(input('Enter your number: '))
+
+if n%2==0:
+    print('Hello ')
+    print(n, 'This number is Even')
+    print('thank you dude')
+else:
+    print('hello sekharbhai')
+    print(n,'This number is odd number')
+    print('thank you darling')
+    
+    
+===========================
+n1 = eval(input('Enter First number: '))
+n2=eval(input('Enter second number: '))
+if n1>n2:
+    print(n1,' is big number')
+else:
+    print(n2, 'is big number')
+    
+=============================
+n1 = eval(input('Enter First number: '))
+n2=eval(input('Enter second number: '))
+if n1>n2:
+    print(n1,' is biger than',n2)
+else:
+    print(n2, 'is big number',n1)
+
+output:
+Enter First number: 89
+Enter second number: 23
+89  is biger than 23
+======================
+
+    
+=================================

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Basics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+    #footer{
+      background-color: black;
+      color:white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+   <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+     <a class="navbar-brand" href="#">NTH-Oraganization</a>
+
+     <button type="button" class="navbar-toggler" data-toggle="collapse"
+             data-target="#collapsibleNavbar">
+         <span class="navbar-toggler-icon"></span>
+     </button>
+
+     <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="nav navbar-nav">
+           <li class="nav-item">
+              <a href="#homeContent" class="nav-link active" data-toggle="pill">Home</a>
+           </li>
+           <li class="nav-item">
+            <a href="#servicesContent" class="nav-link" data-toggle="pill">Services</a>
+          </li>
+           <li class="nav-item">
+            <a href="#contactContent" class="nav-link" data-toggle="pill">Contact</a>
+          </li>
+        </ul>
+     </div> <!-- collapsibleNavbar -->
+   </nav>
+
+
+     <div class="tab-content">
+        <div id="homeContent" class="container tab-pane active"
+              style="background-color: coral;">
+           <h3>Welcome to Narayana Tech House.</h3>
+           <p>NTH is a software trainng institute. Here Python teaching very well</p>
+     </div>
+
+        <div id="servicesContent" class="container tab-pane"
+              style="background-color: darkcyan;">
+           <h3>We are giving training on multiple Subjects.</h3>
+            <h5>Available Lanaguages are:</h5>
+            <ol>
+              <li>Python</li>
+              <li>Django</li>
+              <li>REST API</li>
+            </ol>
+             <h5>Available Databases are:</h5>
+            <ol>
+              <li>MySQL</li>
+              <li>Oracle</li>
+              <li>MongoDB</li>
+            </ol>
+
+        </div>
+
+        <div id="contactContent" class="container tab-pane"
+              style="background-color: yellow;">
+           <h3>Welcome to Narayana Tech House.</h3>
+           <p>Please contact admin people for more information about new batches</p>
+           <pre>
+             Mobile: 9010xxxx,
+             Address: Hyderabad,
+             PinCode : 52323
+           </pre>
+        </div>
+
+     </div><!-- tab-content -->
+
+
+<footer id="footer">
+    All rights reserved &copy; NTH-Organization
+</footer>
+
+</body>
+</html>

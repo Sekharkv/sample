@@ -1,0 +1,129 @@
+
+BOOTSTRAP : ( by Sinivas J)
+===========  **************
+
+What is Bootstrap?
+=============
+Bootstrap is a free front-end framework for faster and easier web development
+
+Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, images and many other, as well as optional JavaScript plugins
+
+Bootstrap also gives you the ability to easily create responsive designs
+
+What is Responsive Web Design?
+==========================
+Responsive web design is nothing but creating web sites which automatically 
+adjust themselves to look good on all devices, from small phones to large desktops.
+
+
+
+
+
+Why Use Bootstrap?
+==============
+Advantages of Bootstrap:
+
+Easy to use:    Anybody with just basic knowledge of HTML and CSS can start using    =========       Bootstrap.
+
+
+Responsive features:    Bootstrap's responsive CSS adjusts to phones, tablets, and =================      desktops.
+
+
+Mobile-first approach:      In Bootstrap, mobile-first styles are part of the core                             framework
+=================
+
+Browser compatibility:       Bootstrap  is compatible with all modern browsers ==================         (Chrome,  Firefox, Internet Explorer  10+, Edge,                              Safari, and Opera)
+
+
+how we get bootstrap lines code 
+----------------   ------------    -------------
+1. goto w3schools.com
+2. goto bootstrap
+3. select any one concept like tables concept
+4. click on "Try It Yourself"
+5. copy all lines which are inside <head> tag
+6. past all the bootstrap lines in our example inside <head> tag.
+
+
+Example :
+=====
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+Create First Web Page With Bootstrap :
+================================
+
+1. Add the HTML5 doctype
+----------------------------------
+Bootstrap  uses HTML elements and CSS properties that require the HTML5 doctype.
+
+Always include the HTML5 doctype at the beginning of the page, along with the lang attribute and the correct character set:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+  </head>
+</html>
+
+
+2. Bootstrap  is mobile-first
+------------------------------------------
+To ensure proper rendering and touch zooming, add the following <meta> tag inside the
+ <head> element:
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+here,
+The  width=device-width   part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+The initial-scale=1 part sets the initial zoom level when the page is first loaded by the browser.
+
+
+3. Containers
+-------------------
+Bootstrap  also requires a containing element to wrap site contents.
+
+There are two types of container classes to choose from:
+
+The  .container    class provides a responsive fixed width container
+
+The  .container-fluid     class provides a full width container, spanning the entire width of the viewport
+
+
+
+
+Text Colors
+=======
+Bootstrap  has some contextual classes that can be used to provide "meaning through colors".
+
+The classes for text colors are:  .text-primary, .text-success, .text-info, .text-warning, .text-danger,
+
+ex:
+---
+<p class="text-success">hello</p>
+
+
+
+Background Colors
+============
+The classes for background colors are: .bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light.
+
+Note that background colors do not set the text color, 
+
+ex:
+----
+<p class="bg-success">hello</p>
+

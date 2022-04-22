@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Button Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+    #container1,#container2{
+      background-color: lightgray;
+      min-width: 400px;
+      min-height: 400px;
+      padding: 30px;
+    }
+    #container2{
+      background-color: darkcyan;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="alert alert-danger alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <h4>Welcome to Html</h4>
+    </div>
+
+    <div class="container-fluid" id="container1">
+       <div class="row">
+         <div class="col-md-6">
+           <img src="../img/bridge_europe1.jpg" class="img-fluid">
+         </div> <!-- column1 div -->
+
+         <div class="col-md-6">
+            <h1 class="text-center">
+              <button type="button" class="btn btn-primary btn-lg"
+                      id="form_btn" data-toggle="modal" data-target="#myModal">Get Form</button>
+            </h1>
+
+            <h4 style="margin-top: 80px;">This bridge belongs to Landon.It is more Famous</h4>
+
+            <!-- modal form code -->
+            <div class="modal" id="myModal">
+               <div class="modal-dialog">
+                  <div class="modal-content">
+
+                     <div class="modal-header">
+                        <h4 class="modal-title">
+                          Please register here to get more information
+                        </h4>
+                        <button type="button" class="close" data-dismiss="modal">X</button>
+                     </div> <!-- modal-header -->
+
+                     <div class="modal-body">
+                       <form method="post" action="#">
+                          <div class="form-group">
+                            <label class="control-label">E-mail address:</label>
+                            <div>
+                               <input type="email" name="email" class="form-control" placeholder="enter your email">
+                            </div>
+                          </div>
+
+                         <div class="form-group">
+                            <label class="control-label">Name:</label>
+                            <div>
+                               <input type="text" name="name" class="form-control" placeholder="enter your name">
+                            </div>
+                          </div>
+
+                         <div class="form-group">
+                            <label class="control-label">Mobile Number:</label>
+                            <div>
+                               <input type="number" name="mobile" class="form-control" placeholder="your mobile number">
+                            </div>
+                          </div>
+
+                         <div class="form-group">
+                            <label class="control-label">Description:</label>
+                            <div>
+                              <textarea  name="description" class="form-control" placeholder="enter your messages here"></textarea>
+                            </div>
+                          </div>
+
+                         <div class="form-group">
+                            <div>
+                               <input type="submit" value="Submit" class="btn btn-primary btn-block">
+                            </div>
+                          </div>
+
+                       </form>
+                     </div> <!-- modal- body -->
+
+                    <div class="modal-footer">
+                       <button type="button" class="btn btn-danger btn-block"
+                               data-dismiss="modal">Close</button>
+                    </div> <!-- modal-footer -->
+
+
+                  </div> <!-- modal-content -->
+               </div> <!-- modal-dialog -->
+            </div> <!-- modal -->
+
+
+         </div><!-- column 2 div -->
+       </div> <!-- row div -->
+    </div> <!-- container div -->
+
+    <div class="container-fluid" id="container2">
+      <h1>Welcome to Bootstrap Containers concept</h1>
+      <h1>Welcome to Bootstrap Containers concept</h1>
+      <h1>Welcome to Bootstrap Containers concept</h1>
+      <h1>Welcome to Bootstrap Containers concept</h1>
+      <h1>Welcome to Bootstrap Containers concept</h1>
+    </div>
+</body>
+</html>

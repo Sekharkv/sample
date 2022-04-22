@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        <script>
+    THIS IS FIRST JAVASCRIPT PRACTICE CLASS
+
+    var id = 10;  // number type data
+    var age = 36;  // number type data
+    var pincode = 515511; // number type data
+    var account = 10000200; // number type data
+    var aadhar = 90011223366; // number type data
+    var salary = 890000; // number type data
+
+
+    var name = 'SP VARUN SIMHA';  // string type data
+    var city = 'ATP';  // string type data
+    var state = 'AP';  // string type data
+    var country = "INDIA";  // string type data
+
+
+    var flag1 = true;  // boolean type data
+    var flag2 = false;  // boolean type data
+
+    var employee_Id = 20001;  // variable defined
+    var employee_Name; // variable declared
+
+    document.writeln("javascript variables practice <br>");
+    document.writeln(employee_Id + "   " + employee_Name);
+
+    document.writeln("<br>");
+
+
+
+    var carName = "INNOVA CRYSTAL";//Global Variable
+    var price = 29000000; //Global Variable
+
+    //The scope of the global variable is throughout the program, that is means you can access global variable anywhere in the program
+
+    document.writeln("<hr>OUT SIDE OF A FUNCTION<br>");
+    document.writeln(carName + "   " + price);
+
+    document.writeln('<hr>');
+
+    //normal or default function
+    function getData() //non-parameterized function
+    {
+        var laptopName = "LENOVA"; //Local Variable
+        //the scope of the local variable is within the function
+        var branch = "SBI-Mudigubba";
+
+        document.writeln("IN SIDE OF A FUNCTION<br>");
+        document.writeln(laptopName + "  " + branch);
+        document.writeln('<br>');
+
+        document.writeln(carName + "   " + price);//Accessing Global Variables inside a function
+    }
+    getData(); // function calling or function invocation
+    //we no need to pass any arguments to call non-parameterized function
+
+
+    //Local Variable cannot be accessible outside of a function
+    //So if you try to call/access local variable outside of a function , then you will get Variable is not defined
+
+    //document.writeln(laptopName +"  "+ branch);
+    document.writeln("<br><hr><br>");
+
+    //   30  40
+    //   10  20
+    function add(a, b) //parameterized function , here a , b are the input parameters
+    {
+        this.a = a;
+        this.b = b;
+
+        document.writeln(a + "    " + b + "<br>");
+    }
+    add(10, 20);//function calling by passing arguments/values
+    add(30, 40);//function calling by passing arguments/values
+    add(100, 200);//function calling by passing arguments/values
+    add(33, 44);//function calling by passing arguments/values
+
+
+</script>
+    </script>
+</body>
+</html>

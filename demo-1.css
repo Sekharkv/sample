@@ -1,0 +1,45 @@
+
+#myh1{
+    color: deeppink;
+    background-color: chartreuse;
+    font-size: 40px;
+    margin: 70px;
+    border: 13px solid blue;
+    font-family:   "Times New Roman";
+    text-align: center;
+
+
+    /*padding: 70px;*/
+    /*border-width: 5px;*/
+    /*border-top-width: 5px;*/
+    /*border-style: solid double ;*/
+    /*border-color: blue yellow black peru;*/
+}
+
+.myclass2{
+    font-size: 50px;
+}
+
+ol{
+    list-style: none ;
+}
+
+a{
+    text-decoration: overline;
+}
+
+b{
+    padding: 20px;
+    background-color: yellow;
+}
+
+#myid{
+   background-color: deeppink;
+    color: white;
+}
+
+.myclass{
+    background-color: cyan;
+    color: red;
+    padding:10px;
+}

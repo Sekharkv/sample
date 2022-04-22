@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #myDiv{
+        background-color: coral;
+
+    </style>
+</head>
+<body>
+<div id="myDiv">
+    <button type="button" onclick="removeHandler()" id="mybtn">Remove</button>
+</div>
+<p id="demo"> </p>
+<script>
+    document.getElementById('myDiv').addEventListener("mousemove",myFunction)
+    function myFunction(){
+        document.getEementById('demo').innerHTML=Math.random();
+
+       }
+       function removeHadler(){
+       document.getElementById('myDiv').removeEventListener("mousemove",myFunction)
+       }
+</script>
+</body>
+</html>

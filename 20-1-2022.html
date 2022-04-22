@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Form</title>
+
+  <style>
+    form{
+      background-color: bisque;
+      padding: 30px;
+      border: 3px solid red;
+      width: 40%;
+      font-size: 30px;
+      margin: 30px;
+      margin-bottom: 50px;
+    }
+
+    .btns{
+      background-color: green;
+      color: white;
+      font-size: 40px;
+      padding: 10px 30px;
+      margin:10px;
+    }
+
+    label{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+<center>
+   <form method="post">
+     <marquee behaviour="alternative"direction="right" scrollamount="20" bgcolor="white">
+      <h3 style="color:green;text-shadow: 5px 3px 5px red, 5px 8px   blue">Fill the Data :</h3>
+     </marquee>
+
+     <table>
+       <tr>
+         <th><label>Ename :</label></th>
+         <td><input type="text"  name="ename" maxlength="10" size="20" value="Srinivas"></td>
+       </tr>
+
+       <tr>
+         <th> <label>Email :</label></th>
+         <td> <input type="email" name="email" autofocus></td>
+       </tr>
+
+     <tr>
+       <th><label>Joining Date:</label></th>
+       <td> <input type="date" name="jdate"></td>
+     </tr>
+
+     <tr>
+       <th><label>Login Time:</label></th>
+       <td> <input type="time" name="ltime"></td>
+     </tr>
+       
+     </table>
+
+
+
+
+
+
+     <label>Birth Date and Time</label>
+     <input type="datetime-local" name="bdatetime"><br><br>
+
+     <label>Select Gender :</label>
+     <input type="radio" name="gender" value="male">Male
+     <input type="radio" name="gender" value="female">Female
+     <input type="radio" name="gender" value="others">Others<br><br>
+
+     <label>Select your <mark>Company</mark> name :</label>
+     <select name="company" multiple>
+       <option value="tcs">TCS</option>
+       <option value="wipro">Wipro</option>
+       <option value="infosys">Infosys</option>
+       <option value="ibm">IBM</option>
+     </select><br><br>
+
+     <label>Select your <mark>preffered Locations</mark>:</label><br>
+     <input type="checkbox" name="plocation" value="hyd"> Hyderabad <br>
+     <input type="checkbox" name="plocation" value="bangalore"> Bangalore <br>
+     <input type="checkbox" name="plocation" value="chennai"> Chennai <br>
+     <input type="checkbox" name="plocation" value="pune"> Pune <br><br>
+
+     <label>Enter your <strong>Qualification:</strong></label>
+     <input list="qualification">
+     <datalist id="qualification">
+       <option>B-Tech</option>
+       <option>BE</option>
+       <option>M-Tech</option>
+       <option>MCA</option>
+     </datalist><br><br>
+
+     <label>Upload your Resume:</label>
+     <input type="file" name="resume"><br><br>
+
+     <fieldset>
+       <legend>Personal Information:</legend>
+       Name : <input type="text" name="name"><br><br>
+       Mobile : <input type="number" name="mobile"><br><br>
+       Father : <input type="text" name="father"><br><br>
+     </fieldset>
+
+     <div style="margin-left: 150px;">
+       <input type="submit" value="Send" class="btns">
+       <input type="reset" value="Clear Data" class="btns">
+     </div>
+   </form>
+
+</center>
+
+
+</body>
+</html>
