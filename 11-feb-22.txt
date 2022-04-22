@@ -1,0 +1,19 @@
+NAN- not a number
+var a= '10';
+var b='20';
+var a='10';
+var c=9;
+---------------------------------------
+Function:
+	Function is piece of code or fundamental building block. it's used to execute certain task at a time.
+when it will execute-- at the time of invocation and at the time of function calling.
+
+	A function can do only one task at a time. but it can't do the multiple tasks at a time.
+
+STATEMENT: A line that should be end with semicolon is called statement;
+	eg:  -------------------------;   // anything that should be end with semicolon.
+
+TYPES:-2
+   1.Parameterized Function.
+   2. Non parameterized Function.
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #111;
+
+        }
+        .wifi-loader{
+            width: 20px;
+            height: 20px;
+            background-color: #444;
+            border-radius: 50%;
+            position: relative;
+            transform: glow 2s linear infinite;;
+        }
+        .bar,
+        .bar::before,
+        .bar::after{
+            border: 15px solid transparent;
+            border-left: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50);
+
+
+        }
+        .bar{
+            width: 40px;
+            height: 40px;
+            top: -25px;
+            animation:bar-glow1 2s linear infinite;
+
+        }
+        .bar::after{
+            content:"";
+            width: 140px;
+            height: 140px;
+            top: -65px;
+            animation: bar-glow3 2s linear infinite;;
+
+        }
+        @keyframes glow1{
+            40%{
+                background-color: #444;
+
+            }
+            41%{
+                background-color: #ff7a00;
+
+            }
+            100%{
+                background-color: #ff7a00;
+            }
+        }
+        @keyframes bar-glow2{
+            60%{
+                background-color: #444;
+
+            }
+            61%{
+                background-color: #ff7a00;
+
+            }
+            100%{
+                background-color: #ff7a00;
+            }
+        }
+        @keyframes glow3{
+            80%{
+                background-color: #444;
+
+            }
+            81%{
+                background-color: #ff7a00;
+
+            }
+            100%{
+                background-color: #ff7a00;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wifi-loader">
+        <div class="bar">
+
+        </div>
+    </div>
+    
+</body>
+</html>
